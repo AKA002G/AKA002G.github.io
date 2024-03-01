@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Fun</title>
+</head>
+<body>
+    <div class="button-container">
+        <!-- Create 500 buttons dynamically -->
+        <!-- Button 52 has a special ID for redirection -->
+        <!-- Others will not have any specific functionality -->
+        <!-- You can modify this as needed -->
+        <!-- Note: Button numbering starts from 1 (not 0) -->
+        <script>
+            for (let i = 1; i <= 10000; i++) {
+                const button = document.createElement("button");
+                button.textContent = `Button ${i}`;
+                button.addEventListener("click", function() {
+                    if (i === 1230) {
+                        window.location.href = "https://www.justgeek.com/cdn/shop/files/tubbz-dc-batman_1800x1800.jpg?v=1701953634"; // Replace with the desired website URL
+                    }
+                });
+                document.querySelector(".button-container").appendChild(button);
+            }
+        </script>
+    </div>
+    
+    <script src="randombutton.js"></script>
+</body>
+</html>
+
